@@ -9,12 +9,13 @@ git init
 
 # 2. (Optional but recommended) create a .gitignore file to keep junk out
 # Example: ignore virtual environments and data files
-@"
+ @"
 .venv/
 *.csv
 *.log
 __pycache__/
-"@ | Out-File -Encoding utf8 .gitignore
+ "@ | Out-File -Encoding utf8 .gitignore
+
 
 # 3. Stage all files (including .gitignore)
 git add .
