@@ -31,3 +31,17 @@ git branch -M main
 
 # 7. Push to GitHub (force overwrite if GitHub already has files like README)
 git push -u origin main --force
+
+
+
+# 8. Check status
+git status
+
+# 9. Stage changes
+git add .
+
+# 10. Commit with a message
+git commit -m "Add script to read CSV with pandas"
+
+# 11. Push to GitHub
+git push
