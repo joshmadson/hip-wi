@@ -1,0 +1,32 @@
+cd F:\work\code\hip-wi
+
+# 0. Remove old Git history
+ 
+Remove-Item -Recurse -Force .git
+
+# 1. Initialize a new git repo
+git init
+
+# 2. (Optional but recommended) create a .gitignore file to keep junk out
+# Example: ignore virtual environments and data files
+@"
+.venv/
+*.csv
+*.log
+__pycache__/
+"@ | Out-File -Encoding utf8 .gitignore
+
+# 3. Stage all files (including .gitignore)
+git add .
+
+# 4. Commit them
+git commit -m "Initial commit"
+
+# 5. Add the GitHub remote (replace URL with yours if different)
+git remote add origin https://github.com/joshmadson/hip-wi.git
+
+# 6. Make sure branch is called 'main'
+git branch -M main
+
+# 7. Push to GitHub (force overwrite if GitHub already has files like README)
+git push -u origin main --force
