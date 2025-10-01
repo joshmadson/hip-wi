@@ -44,4 +44,4 @@ git add .
 git commit -m "Add script to read CSV with pandas"
 
 # 11. Push to GitHub
-git push
+git push --set-upstream origin main
